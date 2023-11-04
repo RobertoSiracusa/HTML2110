@@ -16,9 +16,10 @@ body{
 * {
     color: blue;
     font-family: Oswald;
+    list-style: none; /* cambia estilo de las listas, tener seleccionado el none le quita el punto a la lista */
 }
 /* propiedades de el fondo */
-/*body{
+/*body{o
     /*background-color: black;
     background-image:
         linear-gradient(180deg,blue,white); 

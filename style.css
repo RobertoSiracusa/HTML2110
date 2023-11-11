@@ -28,7 +28,7 @@
     font-weight: 400; /*grosor de la letra */
     outline: none;/*eliminar borde a los inputs que generemos*/
     /*background-color: #02DD4B;*/
-
+    text-decoration: none;
 }
 /* propiedades de el fondo */
  #background{
@@ -54,7 +54,7 @@ img{
     border-radius: 30% 0; /* aplica redondeo a las esquinas de las imagenes*/
 }
 
-h1,h2,h3,h4 {
+h1,h3,h4 {
     font-size: 24pt; /*tamaño de los titulos*/
 }
 button{
@@ -92,11 +92,12 @@ button:hover{ /* actua compo subclase, el HOVER significa al pasar el mouse sobr
 div {
     perspective: 1000px;
 }
-.box1{
-    transition: transform 500ms ease;
+img{
+    opacity: 0.5;
+    transition: all 0.5s;
 }
-.box1:hover{
-    transform:translatex(400px) translateY(400px) rotateX(90deg)rotateY(20deg);
+img:hover{
+    opacity:1;
 }
 input{
     border: transparent;
@@ -110,4 +111,27 @@ input{
     left: 0;
     width: 100%;
     z-index: 1000; /* aplica profundidad para que el elemento este por delante del resto*/
+}
+h2{
+    font-size:22px;
+}
+.parrafoformulario{
+    font-size:16px;
+}
+.header .nav{
+    background-color:rgba(255, 0, 0, 0.834);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 30%;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.elementosinicio{
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+.header .nav .elementosinicio li{
+    width: max-content;
 }

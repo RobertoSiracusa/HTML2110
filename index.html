@@ -26,8 +26,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="background"> </div>
     <header class="header">
-        <nav>
+        <nav class="nav">
             <img src="" alt="">
             <ul>
                 <li>Inicio</li>
@@ -40,8 +41,8 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1> Titulo de la pagina principal</h1>
+        <section class="jumbotron">
+            <h1> Titulo de la pagina principal</h1> 
 
             <p> Esto solo es un pequeño ejemplo:</p>
             <button> Contactanos</button>
@@ -56,9 +57,9 @@
             <p>     Te damos la más cordial bienvenida a nuestro sitio web. En este espacio, creado con cariño, encontrarás soluciones personalizadas, productos de primera calidad y valiosos recursos. Estamos aquí para ti, y es un placer decirte que este mensaje ha sido escrito por ChatGPT, un asistente virtual altamente capacitado. Explora y únete a nuestra comunidad. Esperamos que disfrutes tu visita</p>
         </section>
         <div> 
-            <img src="/assets/images/DSC_0029.jpg" alt="">
-            <img src="/assets/images/RESP_47_CangasOnís-1024x683.jpg" alt=""> 
-            <img src="/assets/images/Types of Lighting in Photography and How to Shoot in Them.jpg" alt="">
+            <img src="/assets/images/DSC_0029.jpg" alt="" class="box1">
+            <img src="/assets/images/RESP_47_CangasOnís-1024x683.jpg" alt="" class="box2"> 
+            <img src="/assets/images/Types of Lighting in Photography and How to Shoot in Them.jpg" alt="" class="box3">
         </div>
         <div>
             
@@ -71,7 +72,7 @@
             <h2>Unete a nosotros</h2>
             <p> Deja tu email aqui para formar parte de nuestro newsletter</p>
             
-            <form action="/" method="get">
+            <form action="/" method="get" class="formularioemail">
                 <input type="text" name="miNombre">
                 <input type="email" name="miEmail">
                 <input type="password" name="miPassword">

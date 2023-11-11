@@ -17,6 +17,7 @@ body{
     color: blue;
     font-family: Oswald;
     list-style: none; /* cambia estilo de las listas, tener seleccionado el none le quita el punto a la lista */
+    box-sizing: border-box; /* controla el espaciado */
 }
 /* propiedades de el fondo */
 /*body{o

@@ -1,0 +1,137 @@
+/* body{ */
+   /* background-color: white; /*aplico color de fondo al body de la pagina, al aplicarlo aqui se lo estoy aplicando a toda la pagina*/
+
+/*}*/
+/*header{
+    color: red;
+    font-size: 1.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    text-align:center ;
+}*/
+@font-face {
+    font-family: Oswald;
+    src: url('/assets/fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+* {
+    
+    list-style: none; /* cambia estilo de las listas, tener seleccionado el none le quita el punto a la lista */
+    box-sizing: border-box; /* controla el espaciado,evita el agrandamiento de caja*/
+    /* PROPIEDADES DEL ESPACIADO */
+    padding: 0;
+    border: 0;
+    margin: 0;
+    /* PROPIEDADES DE LA TIPOGRAFIA */
+    color: #0A2304;
+    font-family: Oswald; /*cambia el tipo de tipografia*/
+    font-size: 14pt; /*tamaño recomendado entre 12pt y 16pt, 1 rem equivale a 16 pixeles */
+    font-weight: 400; /*grosor de la letra */
+    outline: none;/*eliminar borde a los inputs que generemos*/
+    /*background-color: #02DD4B;*/
+    text-decoration: none;
+}
+/* propiedades de el fondo */
+ #background{
+    background-image:linear-gradient(180deg,#02DD4B,#D3D212); 
+    /* background-image:radial-gradient(circle, blue,red,yellow); */
+    background-size:100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-repeat:repeat-y; /*sirve para que se repita a lo largo del eje Y*/  
+} 
+body{
+    background-image:
+        linear-gradient(180deg,blue,white); 
+    background-image:
+    radial-gradient(circle, blue,red,yellow);
+    
+    background-repeat:repeat-y; 
+    z-index: -1;
+}
+img{
+    border-radius: 30% 0; /* aplica redondeo a las esquinas de las imagenes*/
+}
+
+h1,h3,h4 {
+    font-size: 24pt; /*tamaño de los titulos*/
+}
+button{
+    border:solid 3px #00D397;
+    background-color: #D3D212;
+    padding: 0.7rem;/*sirve para separar los bordes del texto del boton*/
+    font-weight: 500; /* los botones tiene que ir en negrita*/
+    border-radius: 2rem;
+    transition: all .3s ease-out;
+}
+button:hover{ /* actua compo subclase, el HOVER significa al pasar el mouse sobre el objeto, en este caso el boton. Se aplica gracias al comando transition*/
+    background-color: #00D397;/* hace que al activar el transition el fondo pase a ser transparente*/;
+    color: #D3D212;
+    border-color: #0A2304;
+}
+/* TODO LO QUE NO SEA GENERAL LO APLICAREMOS CON LAS CLASES EJEMPLO: JUMBOTRON*/
+/* TOMO LA CLASE JUMBOTRON, PREVIAMENTE DEFINIDA EN EL HTML*/
+.jumbotron{
+    text-align: center; /* ALINEAR LOS ELEMENTOS DE LA CLASE JUMBOTRON DEL HTML*/
+}
+.jumbotron h1{
+    margin-bottom:8pt;
+}
+.jumbotron p{
+    margin-bottom: 16pt; 
+}
+/*EXPLICACION*/
+/* .box1{
+    opacity:1;
+    transform: all .9s ease-in;
+}
+.box1:hover{
+    opacity:0.5;
+} */
+div {
+    perspective: 1000px;
+}
+img{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+img:hover{
+    opacity:1;
+}
+input{
+    border: transparent;
+    background-color: #D9D9D9;
+    padding: 0.7rem;/*sirve para separar los bordes del texto del boton*/
+    border-radius: 2.5rem;
+}
+.header{ 
+    position: sticky; 
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* aplica profundidad para que el elemento este por delante del resto*/
+}
+h2{
+    font-size:22px;
+}
+.parrafoformulario{
+    font-size:16px;
+}
+.header .nav{
+    background-color:rgba(255, 0, 0, 0.834);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 30%;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.elementosinicio{
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+.header .nav .elementosinicio li{
+    width: max-content;
+}
